@@ -1,0 +1,28 @@
+<section class="py2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Ebook Seller
+            </h1>
+            <p class="lead">web app to sell books</p>
+            <form action="/charge" method="POST">
+            <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="{{stripePublishableKey}}"
+                data-amount="999"
+                data-name="Demo Site"
+                data-description="Widget"
+                data-image="img/marketplace.png"
+                data-locale="auto">
+            </script>
+            <script>
+                document.getElementsByClassName('stripe-button-el')[0].style.display = 'none'
+            </script>
+            <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase</button>
+            </form>
+        </div>
+        <div class="col-md-6 mt-3 pt-5">
+            <img src="/img/book.png" alt="img-fluid" height="300">
+        </div>
+    </div>
+</section>
