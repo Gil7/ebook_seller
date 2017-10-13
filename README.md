@@ -1,0 +1,1 @@
+app to consume the stripe api and make payments :)
